@@ -15,6 +15,7 @@
  */
 
 #include "../include/b63/b63.h"
+#include "../include/b63/counters/perf_events.h"
 
 B63_BASELINE(basic, n) {
   int i = 0, res = 0;
@@ -33,6 +34,7 @@ B63_BENCHMARK(basic_half, n) {
 }
 
 int main(int argc, char **argv) {
-  B63_RUN(argc, argv);
+	B63_RUN_WITH("time,lpe:branches,lpe:branch-misses,lpe:cycles,lpe:L1-dcache-load-misses", argc, argv);
+	//B63_RUN(argc, argv);
   return 0;
 }

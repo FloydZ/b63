@@ -58,7 +58,7 @@ static void b63_print_comparison(b63_benchmark *bm, const char *counter,
   double b = d + interval99;
   const char *c = B63_CLR_RESET;
   char confident = ' ';
-  /* confidense interval outside of 0 */
+  /* confidence interval outside of 0 */
   if (a * b > 0) {
     c = d < 0 ? B63_CLR_GREEN : B63_CLR_RED;
     confident = '*';
@@ -73,9 +73,17 @@ static void b63_print_done(b63_epoch *r) {
   /* plaintext output */
   if (r->benchmark->suite->printer_config.plaintext != 0) {
     char d = r->benchmark->suite->printer_config.delimiter;
-    printf("%s%c%s%c%" PRId64 "%c%" PRId64 "%c%lf\n", r->benchmark->name, d,
-           r->counter->name, d, r->iterations, d, r->events, d,
-           1.0 * r->events / r->iterations);
+	 // printf("%s%c%s\n",
+	 //        r->benchmark->name, d,
+	 //        r->counter->name
+	 // );
+
+	printf("%s%c%s%c%" PRId64 "%c%" PRId64 "%c%lf\n",
+		   r->benchmark->name, d,
+           r->counter->name, d,
+		   r->iterations, d,
+		   r->events, d,
+           1.0f * (double)(r->events) / (double)(r->iterations));
     fflush(stdout);
   }
 }
