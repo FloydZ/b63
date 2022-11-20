@@ -1,3 +1,4 @@
+#ifdef __APPLE__
 #include "../include/b63/b63.h"
 #include "../include/b63/counters/osx_kperf.h"
 
@@ -125,3 +126,9 @@ int main(int argc, char **argv) {
   B63_RUN_WITH("time", argc, argv);
   return 0;
 }
+
+#else
+int main() {
+	return 0;
+}
+#endif

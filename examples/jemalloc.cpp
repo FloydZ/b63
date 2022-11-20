@@ -13,16 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#include "../include/b63/counters/jemalloc.h"
-#include "../include/b63/b63.h"
-
 #include <algorithm>
 #include <cstdint>
 #include <cstdlib>
 #include <ctime>
 #include <numeric>
 #include <vector>
+
+// this is stupid, nixos apperently doesnt export this function in jemalloc, because its a dynamic lib and not a static one?
+extern "C" {
+int mallctl(const char *name, void *oldp, size_t *oldlenp, void *newp, size_t newlen) {
+	return 0;
+}
+}
+#include "../include/b63/counters/jemalloc.h"
+#include "../include/b63/b63.h"
+
+
 
 const size_t kSize = (1 << 16);
 

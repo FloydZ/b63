@@ -1,4 +1,4 @@
-set(SANITIZER address leak thread memory undefined)
+set(SANITIZER address leak thread undefined) # memory 
 
 file(GLOB TEST_CPP_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
 foreach(testfile ${TEST_CPP_SOURCES})
@@ -6,7 +6,6 @@ foreach(testfile ${TEST_CPP_SOURCES})
     string(REPLACE ".cpp" "" file ${filename})
     add_executable(${file} ${testfile})
     target_link_libraries(${file} ${LINK_FLAGS})
-
 
     # sanitizer
     foreach(sanitizer ${SANITIZER})
