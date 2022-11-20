@@ -69,11 +69,14 @@ static void b63_suite_init(b63_suite *suite, int argc, char **argv) {
   suite->printer_config.plaintext = 1;
   suite->printer_config.delimiter = ',';
 
-  while ((c = getopt(argc, argv, "it:e:c:d:s:")) != -1) {
+  while ((c = getopt(argc, argv, "ijt:e:c:d:s:")) != -1) {
     switch (c) {
     case 'i':
       suite->printer_config.plaintext = 0;
       break;
+	case 'j':
+	  suite->printer_config.plaintext = 2;
+	  break;
     case 'd':
       /* TODO: rename to delimiter */
       suite->printer_config.delimiter = optarg[0];

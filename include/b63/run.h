@@ -62,6 +62,7 @@ static void b63_epoch_run(b63_epoch *e, int64_t seed) {
       break;
     }
   }
+
   b63_print_done(e);
 }
 
@@ -149,16 +150,22 @@ static void b63_suite_run(b63_suite *suite) {
 /* Reads config, creates suite and executes it */
 static void b63_go(int argc, char **argv, const char *default_counter) {
   b63_suite suite;
-
   b63_suite_init(&suite, argc, argv);
+
+  if (suite.printer_config.plaintext == 2) {
+	  printf("[\n");
+  }
 
   if (suite.counter_list.size == 0) {
     b63_counter_list_init(&suite.counter_list, default_counter);
   }
 
   b63_suite_run(&suite);
-
   b63_counter_list_cleanup(&suite.counter_list);
+
+  if (suite.printer_config.plaintext == 2) {
+	  printf("]");
+  }
 }
 
 /*
