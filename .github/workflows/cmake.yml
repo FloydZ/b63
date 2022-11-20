@@ -1,0 +1,121 @@
+name: test
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+env:
+  # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
+  BUILD_TYPE: Release
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Install libjemalloc-dev
+      run: sudo apt-get install libjemalloc-dev
+          
+    - uses: actions/checkout@v3
+    
+    - name: Configure CMake
+      run: cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
+
+    - name: Build
+      run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
+
+    - name: Test
+      working-directory: ${{github.workspace}}/build
+      run: |
+        ./examples/assert
+        ./examples/baseline_leak
+        ./examples/baseline_undefined
+        ./examples/bm_seed_address
+        ./examples/custom_leak
+        ./examples/indirect_undefined
+        ./examples/l1d_miss_address
+        ./examples/raw_thread
+        ./examples/suspend
+        ./examples/assert_address
+        ./examples/baseline_multi
+        ./examples/basic
+        ./examples/bm_seed_leak
+        ./examples/custom_thread
+        ./examples/jemalloc
+        ./examples/l1d_miss_leak
+        ./examples/raw_undefined
+        ./examples/suspend_address
+        ./examples/assert_leak
+        ./examples/baseline_multi_address
+        ./examples/basic_address
+        ./examples/bm_seed_thread
+        ./examples/custom_undefined
+        ./examples/jemalloc_address
+        ./examples/l1d_miss_thread
+        ./examples/storms
+        ./examples/suspend_leak
+        ./examples/assert_thread
+        ./examples/baseline_multi_leak
+        ./examples/basic_leak
+        ./examples/bm_seed_undefined
+        ./examples/indirect
+        ./examples/jemalloc_leak
+        ./examples/l1d_miss_undefined
+        ./examples/storms_address
+        ./examples/suspend_thread
+        ./examples/assert_undefined
+        ./examples/baseline_multi_thread
+        ./examples/basic_thread
+        ./examples/indirect_address
+        ./examples/jemalloc_thread*
+        ./examples/raw
+        ./examples/storms_leak
+        ./examples/suspend_undefined
+        ./examples/baseline
+        ./examples/baseline_multi_undefined
+        ./examples/basic_undefined
+        ./examples/custom
+        ./examples/indirect_leak
+        ./examples/jemalloc_undefined
+        ./examples/raw_address
+        ./examples/storms_thread
+        ./examples/baseline_address
+        ./examples/baseline_thread
+        ./examples/bm_seed
+        ./examples/custom_address
+        ./examples/indirect_thread
+        ./examples/l1d_miss
+        ./examples/raw_leak
+        ./examples/torms_undefined
+        
+  benchmark:
+    name: Run benchmarks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install libjemalloc-dev
+        run: sudo apt-get install libjemalloc-dev
+
+      - uses: actions/checkout@v3
+      
+      - name: Configure CMake
+        run: cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
+
+      - name: Run benchmark (get data)
+        working-directory: ${{github.workspace}}/build
+        run: 
+          make bench_b63_gbench && ./example/assert --benchmark_format=json | tee benchmark_result.json
+
+      - name: Store benchmark result
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: gBenchmark
+          tool: 'googlecpp'
+          output-file-path: build/benchmark_result.json
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          auto-push: true
+          alert-threshold: '200%'
+          comment-on-alert: true
+          fail-on-alert: true
+          alert-comment-cc-users: '@FloydZ'
