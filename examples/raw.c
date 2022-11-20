@@ -74,10 +74,16 @@ B63_BENCHMARK(many_reads, n) {
       v[i] = rand();
     }
   }
-  for (j = 0; j < n; j++)
+
+  for (j = 0; j < n; j++) {
     for (i = 0; i < kLookups; i++) {
       res += v[i];
     }
+  }
+
+  B63_SUSPEND {
+	free(v);
+  }
   B63_KEEP(res);
 }
 
@@ -90,11 +96,17 @@ B63_BENCHMARK(many_writes, n) {
       v[i] = rand();
     }
   }
-  for (j = 0; j < n; j++)
+  for (j = 0; j < n; j++) {
     for (i = 0; i < kLookups; i++) {
       v[i] = res;
       res += i + j;
     }
+  }
+
+
+  B63_SUSPEND {
+	free(v);
+  }
   B63_KEEP(res);
 }
 
