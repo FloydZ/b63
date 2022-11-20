@@ -105,7 +105,7 @@ jobs:
       - name: Run benchmark (get data)
         working-directory: ${{github.workspace}}/build
         run: 
-          make baseline && ./example/baseline -j > benchmark_result.json
+          make baseline && ./examples/baseline -j > benchmark_result.json
 
       - name: Store benchmark result
         uses: benchmark-action/github-action-benchmark@v1
