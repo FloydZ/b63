@@ -1,1 +1,0 @@
-/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc CMakeFiles/suspend_thread.dir/suspend.c.o -o suspend_thread  -lm -fsanitize=thread 

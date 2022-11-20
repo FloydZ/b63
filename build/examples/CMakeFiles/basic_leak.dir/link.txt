@@ -1,1 +1,0 @@
-/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc CMakeFiles/basic_leak.dir/basic.c.o -o basic_leak  -lm -fsanitize=leak 
