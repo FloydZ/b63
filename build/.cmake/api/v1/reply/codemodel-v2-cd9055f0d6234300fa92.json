@@ -1,0 +1,607 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.1"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "examples",
+					"jsonFile" : "directory-examples-1c8b83b621b6ef38a245.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "examples",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52,
+						53,
+						54,
+						55,
+						56,
+						57,
+						58,
+						59
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "b63",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52,
+						53,
+						54,
+						55,
+						56,
+						57,
+						58,
+						59
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "assert::@714eac15f71a94114fdf",
+					"jsonFile" : "target-assert-d5866fec9d47cddfd5cf.json",
+					"name" : "assert",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "assert_address::@714eac15f71a94114fdf",
+					"jsonFile" : "target-assert_address-d91aa0e75ce861fa1b57.json",
+					"name" : "assert_address",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "assert_leak::@714eac15f71a94114fdf",
+					"jsonFile" : "target-assert_leak-30097350240c88ed886c.json",
+					"name" : "assert_leak",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "assert_thread::@714eac15f71a94114fdf",
+					"jsonFile" : "target-assert_thread-64dd6c41987c695f8518.json",
+					"name" : "assert_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "assert_undefined::@714eac15f71a94114fdf",
+					"jsonFile" : "target-assert_undefined-26cc9cde5f0f245f8724.json",
+					"name" : "assert_undefined",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "baseline::@714eac15f71a94114fdf",
+					"jsonFile" : "target-baseline-0d0887208b8372e68187.json",
+					"name" : "baseline",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "baseline_address::@714eac15f71a94114fdf",
+					"jsonFile" : "target-baseline_address-4b78130f54c4be9044bc.json",
+					"name" : "baseline_address",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "baseline_leak::@714eac15f71a94114fdf",
+					"jsonFile" : "target-baseline_leak-dbad305800685bbfd8c3.json",
+					"name" : "baseline_leak",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "baseline_multi::@714eac15f71a94114fdf",
+					"jsonFile" : "target-baseline_multi-f2117e25dbc86e44303a.json",
+					"name" : "baseline_multi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "baseline_multi_address::@714eac15f71a94114fdf",
+					"jsonFile" : "target-baseline_multi_address-002c73019668730be126.json",
+					"name" : "baseline_multi_address",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "baseline_multi_leak::@714eac15f71a94114fdf",
+					"jsonFile" : "target-baseline_multi_leak-a3c91b49628d57c1267b.json",
+					"name" : "baseline_multi_leak",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "baseline_multi_thread::@714eac15f71a94114fdf",
+					"jsonFile" : "target-baseline_multi_thread-a4bf0ca2e70a59eab6e4.json",
+					"name" : "baseline_multi_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "baseline_multi_undefined::@714eac15f71a94114fdf",
+					"jsonFile" : "target-baseline_multi_undefined-8f02039d6fd591551630.json",
+					"name" : "baseline_multi_undefined",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "baseline_thread::@714eac15f71a94114fdf",
+					"jsonFile" : "target-baseline_thread-495c0d66f44d875e5c5e.json",
+					"name" : "baseline_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "baseline_undefined::@714eac15f71a94114fdf",
+					"jsonFile" : "target-baseline_undefined-9b3b1d1207c50cdb35b5.json",
+					"name" : "baseline_undefined",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "basic::@714eac15f71a94114fdf",
+					"jsonFile" : "target-basic-c99b313304e59e4076b0.json",
+					"name" : "basic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "basic_address::@714eac15f71a94114fdf",
+					"jsonFile" : "target-basic_address-bf27ed20a7c3bfc5c7f7.json",
+					"name" : "basic_address",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "basic_leak::@714eac15f71a94114fdf",
+					"jsonFile" : "target-basic_leak-0994d7615e79db5cd532.json",
+					"name" : "basic_leak",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "basic_thread::@714eac15f71a94114fdf",
+					"jsonFile" : "target-basic_thread-e627c6731c4088138b7a.json",
+					"name" : "basic_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "basic_undefined::@714eac15f71a94114fdf",
+					"jsonFile" : "target-basic_undefined-5cd61522693b2a0a297e.json",
+					"name" : "basic_undefined",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "bm_seed::@714eac15f71a94114fdf",
+					"jsonFile" : "target-bm_seed-a240916645970636b00c.json",
+					"name" : "bm_seed",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "bm_seed_address::@714eac15f71a94114fdf",
+					"jsonFile" : "target-bm_seed_address-4ebd3240d330efdc74bf.json",
+					"name" : "bm_seed_address",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "bm_seed_leak::@714eac15f71a94114fdf",
+					"jsonFile" : "target-bm_seed_leak-ffe9d1695d230ed28933.json",
+					"name" : "bm_seed_leak",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "bm_seed_thread::@714eac15f71a94114fdf",
+					"jsonFile" : "target-bm_seed_thread-50194c614473388aaba2.json",
+					"name" : "bm_seed_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "bm_seed_undefined::@714eac15f71a94114fdf",
+					"jsonFile" : "target-bm_seed_undefined-dd9252e42ed7bb02dd7c.json",
+					"name" : "bm_seed_undefined",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "custom::@714eac15f71a94114fdf",
+					"jsonFile" : "target-custom-be67520672e667e65041.json",
+					"name" : "custom",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "custom_address::@714eac15f71a94114fdf",
+					"jsonFile" : "target-custom_address-de8d997bb69ffd5bb617.json",
+					"name" : "custom_address",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "custom_leak::@714eac15f71a94114fdf",
+					"jsonFile" : "target-custom_leak-150c7296369e81350f52.json",
+					"name" : "custom_leak",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "custom_thread::@714eac15f71a94114fdf",
+					"jsonFile" : "target-custom_thread-36178a80da84a9b6cdc6.json",
+					"name" : "custom_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "custom_undefined::@714eac15f71a94114fdf",
+					"jsonFile" : "target-custom_undefined-35061d6ebfc3d5e321d8.json",
+					"name" : "custom_undefined",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "indirect::@714eac15f71a94114fdf",
+					"jsonFile" : "target-indirect-9e0edb105cdc53f6b79f.json",
+					"name" : "indirect",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "indirect_address::@714eac15f71a94114fdf",
+					"jsonFile" : "target-indirect_address-eb4667d56a051d80a3a9.json",
+					"name" : "indirect_address",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "indirect_leak::@714eac15f71a94114fdf",
+					"jsonFile" : "target-indirect_leak-0b6638c8aed071a3912c.json",
+					"name" : "indirect_leak",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "indirect_thread::@714eac15f71a94114fdf",
+					"jsonFile" : "target-indirect_thread-670aace83fd60b958eba.json",
+					"name" : "indirect_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "indirect_undefined::@714eac15f71a94114fdf",
+					"jsonFile" : "target-indirect_undefined-ca2e36d8b0c0a5e95b36.json",
+					"name" : "indirect_undefined",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "jemalloc::@714eac15f71a94114fdf",
+					"jsonFile" : "target-jemalloc-0f2209e1c5b2cc21b289.json",
+					"name" : "jemalloc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "jemalloc_address::@714eac15f71a94114fdf",
+					"jsonFile" : "target-jemalloc_address-b2f7d8b114f7d6123622.json",
+					"name" : "jemalloc_address",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "jemalloc_leak::@714eac15f71a94114fdf",
+					"jsonFile" : "target-jemalloc_leak-36e24993563583d8aa58.json",
+					"name" : "jemalloc_leak",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "jemalloc_thread::@714eac15f71a94114fdf",
+					"jsonFile" : "target-jemalloc_thread-7345775934b772e6a1c4.json",
+					"name" : "jemalloc_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "jemalloc_undefined::@714eac15f71a94114fdf",
+					"jsonFile" : "target-jemalloc_undefined-3ae09f1dc7d4e3393f6f.json",
+					"name" : "jemalloc_undefined",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "l1d_miss::@714eac15f71a94114fdf",
+					"jsonFile" : "target-l1d_miss-94827f672ce2892327b6.json",
+					"name" : "l1d_miss",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "l1d_miss_address::@714eac15f71a94114fdf",
+					"jsonFile" : "target-l1d_miss_address-746acddd413ac0133509.json",
+					"name" : "l1d_miss_address",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "l1d_miss_leak::@714eac15f71a94114fdf",
+					"jsonFile" : "target-l1d_miss_leak-f97f4bef5820bf9a3bb9.json",
+					"name" : "l1d_miss_leak",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "l1d_miss_thread::@714eac15f71a94114fdf",
+					"jsonFile" : "target-l1d_miss_thread-b5bbe0a5be7d9fe546b1.json",
+					"name" : "l1d_miss_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "l1d_miss_undefined::@714eac15f71a94114fdf",
+					"jsonFile" : "target-l1d_miss_undefined-34f1dd67397fcda53d8c.json",
+					"name" : "l1d_miss_undefined",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "raw::@714eac15f71a94114fdf",
+					"jsonFile" : "target-raw-edba6adbce3f79578e6b.json",
+					"name" : "raw",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "raw_address::@714eac15f71a94114fdf",
+					"jsonFile" : "target-raw_address-e32d642e87bb152cbea8.json",
+					"name" : "raw_address",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "raw_leak::@714eac15f71a94114fdf",
+					"jsonFile" : "target-raw_leak-dfb2fe5a52b9bebcd4d5.json",
+					"name" : "raw_leak",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "raw_thread::@714eac15f71a94114fdf",
+					"jsonFile" : "target-raw_thread-80ea8a22718ae9a75981.json",
+					"name" : "raw_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "raw_undefined::@714eac15f71a94114fdf",
+					"jsonFile" : "target-raw_undefined-929778e1d2d24284e4a9.json",
+					"name" : "raw_undefined",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "storms::@714eac15f71a94114fdf",
+					"jsonFile" : "target-storms-a55d576f26febc613e38.json",
+					"name" : "storms",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "storms_address::@714eac15f71a94114fdf",
+					"jsonFile" : "target-storms_address-44b7d6766127a3f57e2c.json",
+					"name" : "storms_address",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "storms_leak::@714eac15f71a94114fdf",
+					"jsonFile" : "target-storms_leak-3b19f577a515c723b4e3.json",
+					"name" : "storms_leak",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "storms_thread::@714eac15f71a94114fdf",
+					"jsonFile" : "target-storms_thread-a0df7d7292a61a81fd1b.json",
+					"name" : "storms_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "storms_undefined::@714eac15f71a94114fdf",
+					"jsonFile" : "target-storms_undefined-8dab4fe57a35570e7052.json",
+					"name" : "storms_undefined",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "suspend::@714eac15f71a94114fdf",
+					"jsonFile" : "target-suspend-ca5b33370d9ef0325509.json",
+					"name" : "suspend",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "suspend_address::@714eac15f71a94114fdf",
+					"jsonFile" : "target-suspend_address-07d8f019279a74e2f775.json",
+					"name" : "suspend_address",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "suspend_leak::@714eac15f71a94114fdf",
+					"jsonFile" : "target-suspend_leak-22b2daf4f0f85915111c.json",
+					"name" : "suspend_leak",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "suspend_thread::@714eac15f71a94114fdf",
+					"jsonFile" : "target-suspend_thread-6fdcf00691c4b398fb94.json",
+					"name" : "suspend_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "suspend_undefined::@714eac15f71a94114fdf",
+					"jsonFile" : "target-suspend_undefined-d651b500b801d93278d4.json",
+					"name" : "suspend_undefined",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/duda/Downloads/programming/b63/build",
+		"source" : "/home/duda/Downloads/programming/b63"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,1 @@
+/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc CMakeFiles/basic_address.dir/basic.c.o -o basic_address  -lm -fsanitize=address 

@@ -1,0 +1,302 @@
+[
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -std=gnu++11 -o CMakeFiles/bm_seed.dir/bm_seed.cpp.o -c /home/duda/Downloads/programming/b63/examples/bm_seed.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/bm_seed.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=address -std=gnu++11 -o CMakeFiles/bm_seed_address.dir/bm_seed.cpp.o -c /home/duda/Downloads/programming/b63/examples/bm_seed.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/bm_seed.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=leak -std=gnu++11 -o CMakeFiles/bm_seed_leak.dir/bm_seed.cpp.o -c /home/duda/Downloads/programming/b63/examples/bm_seed.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/bm_seed.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=thread -std=gnu++11 -o CMakeFiles/bm_seed_thread.dir/bm_seed.cpp.o -c /home/duda/Downloads/programming/b63/examples/bm_seed.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/bm_seed.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=undefined -std=gnu++11 -o CMakeFiles/bm_seed_undefined.dir/bm_seed.cpp.o -c /home/duda/Downloads/programming/b63/examples/bm_seed.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/bm_seed.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -std=gnu++11 -o CMakeFiles/indirect.dir/indirect.cpp.o -c /home/duda/Downloads/programming/b63/examples/indirect.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/indirect.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=address -std=gnu++11 -o CMakeFiles/indirect_address.dir/indirect.cpp.o -c /home/duda/Downloads/programming/b63/examples/indirect.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/indirect.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=leak -std=gnu++11 -o CMakeFiles/indirect_leak.dir/indirect.cpp.o -c /home/duda/Downloads/programming/b63/examples/indirect.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/indirect.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=thread -std=gnu++11 -o CMakeFiles/indirect_thread.dir/indirect.cpp.o -c /home/duda/Downloads/programming/b63/examples/indirect.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/indirect.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=undefined -std=gnu++11 -o CMakeFiles/indirect_undefined.dir/indirect.cpp.o -c /home/duda/Downloads/programming/b63/examples/indirect.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/indirect.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -std=gnu++11 -o CMakeFiles/jemalloc.dir/jemalloc.cpp.o -c /home/duda/Downloads/programming/b63/examples/jemalloc.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/jemalloc.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=address -std=gnu++11 -o CMakeFiles/jemalloc_address.dir/jemalloc.cpp.o -c /home/duda/Downloads/programming/b63/examples/jemalloc.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/jemalloc.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=leak -std=gnu++11 -o CMakeFiles/jemalloc_leak.dir/jemalloc.cpp.o -c /home/duda/Downloads/programming/b63/examples/jemalloc.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/jemalloc.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=thread -std=gnu++11 -o CMakeFiles/jemalloc_thread.dir/jemalloc.cpp.o -c /home/duda/Downloads/programming/b63/examples/jemalloc.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/jemalloc.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=undefined -std=gnu++11 -o CMakeFiles/jemalloc_undefined.dir/jemalloc.cpp.o -c /home/duda/Downloads/programming/b63/examples/jemalloc.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/jemalloc.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -std=gnu++11 -o CMakeFiles/l1d_miss.dir/l1d_miss.cpp.o -c /home/duda/Downloads/programming/b63/examples/l1d_miss.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/l1d_miss.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=address -std=gnu++11 -o CMakeFiles/l1d_miss_address.dir/l1d_miss.cpp.o -c /home/duda/Downloads/programming/b63/examples/l1d_miss.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/l1d_miss.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=leak -std=gnu++11 -o CMakeFiles/l1d_miss_leak.dir/l1d_miss.cpp.o -c /home/duda/Downloads/programming/b63/examples/l1d_miss.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/l1d_miss.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=thread -std=gnu++11 -o CMakeFiles/l1d_miss_thread.dir/l1d_miss.cpp.o -c /home/duda/Downloads/programming/b63/examples/l1d_miss.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/l1d_miss.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=undefined -std=gnu++11 -o CMakeFiles/l1d_miss_undefined.dir/l1d_miss.cpp.o -c /home/duda/Downloads/programming/b63/examples/l1d_miss.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/l1d_miss.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -std=gnu++11 -o CMakeFiles/storms.dir/storms.cpp.o -c /home/duda/Downloads/programming/b63/examples/storms.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/storms.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=address -std=gnu++11 -o CMakeFiles/storms_address.dir/storms.cpp.o -c /home/duda/Downloads/programming/b63/examples/storms.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/storms.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=leak -std=gnu++11 -o CMakeFiles/storms_leak.dir/storms.cpp.o -c /home/duda/Downloads/programming/b63/examples/storms.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/storms.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=thread -std=gnu++11 -o CMakeFiles/storms_thread.dir/storms.cpp.o -c /home/duda/Downloads/programming/b63/examples/storms.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/storms.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/g++  -I/home/duda/Downloads/programming/b63/include -fsanitize=undefined -std=gnu++11 -o CMakeFiles/storms_undefined.dir/storms.cpp.o -c /home/duda/Downloads/programming/b63/examples/storms.cpp",
+  "file": "/home/duda/Downloads/programming/b63/examples/storms.cpp"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -std=gnu11 -o CMakeFiles/assert.dir/assert.c.o -c /home/duda/Downloads/programming/b63/examples/assert.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/assert.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=address -std=gnu11 -o CMakeFiles/assert_address.dir/assert.c.o -c /home/duda/Downloads/programming/b63/examples/assert.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/assert.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=leak -std=gnu11 -o CMakeFiles/assert_leak.dir/assert.c.o -c /home/duda/Downloads/programming/b63/examples/assert.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/assert.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=thread -std=gnu11 -o CMakeFiles/assert_thread.dir/assert.c.o -c /home/duda/Downloads/programming/b63/examples/assert.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/assert.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=undefined -std=gnu11 -o CMakeFiles/assert_undefined.dir/assert.c.o -c /home/duda/Downloads/programming/b63/examples/assert.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/assert.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -std=gnu11 -o CMakeFiles/baseline.dir/baseline.c.o -c /home/duda/Downloads/programming/b63/examples/baseline.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/baseline.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=address -std=gnu11 -o CMakeFiles/baseline_address.dir/baseline.c.o -c /home/duda/Downloads/programming/b63/examples/baseline.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/baseline.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=leak -std=gnu11 -o CMakeFiles/baseline_leak.dir/baseline.c.o -c /home/duda/Downloads/programming/b63/examples/baseline.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/baseline.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=thread -std=gnu11 -o CMakeFiles/baseline_thread.dir/baseline.c.o -c /home/duda/Downloads/programming/b63/examples/baseline.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/baseline.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=undefined -std=gnu11 -o CMakeFiles/baseline_undefined.dir/baseline.c.o -c /home/duda/Downloads/programming/b63/examples/baseline.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/baseline.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -std=gnu11 -o CMakeFiles/baseline_multi.dir/baseline_multi.c.o -c /home/duda/Downloads/programming/b63/examples/baseline_multi.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/baseline_multi.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=address -std=gnu11 -o CMakeFiles/baseline_multi_address.dir/baseline_multi.c.o -c /home/duda/Downloads/programming/b63/examples/baseline_multi.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/baseline_multi.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=leak -std=gnu11 -o CMakeFiles/baseline_multi_leak.dir/baseline_multi.c.o -c /home/duda/Downloads/programming/b63/examples/baseline_multi.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/baseline_multi.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=thread -std=gnu11 -o CMakeFiles/baseline_multi_thread.dir/baseline_multi.c.o -c /home/duda/Downloads/programming/b63/examples/baseline_multi.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/baseline_multi.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=undefined -std=gnu11 -o CMakeFiles/baseline_multi_undefined.dir/baseline_multi.c.o -c /home/duda/Downloads/programming/b63/examples/baseline_multi.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/baseline_multi.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -std=gnu11 -o CMakeFiles/basic.dir/basic.c.o -c /home/duda/Downloads/programming/b63/examples/basic.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/basic.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=address -std=gnu11 -o CMakeFiles/basic_address.dir/basic.c.o -c /home/duda/Downloads/programming/b63/examples/basic.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/basic.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=leak -std=gnu11 -o CMakeFiles/basic_leak.dir/basic.c.o -c /home/duda/Downloads/programming/b63/examples/basic.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/basic.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=thread -std=gnu11 -o CMakeFiles/basic_thread.dir/basic.c.o -c /home/duda/Downloads/programming/b63/examples/basic.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/basic.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=undefined -std=gnu11 -o CMakeFiles/basic_undefined.dir/basic.c.o -c /home/duda/Downloads/programming/b63/examples/basic.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/basic.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -std=gnu11 -o CMakeFiles/custom.dir/custom.c.o -c /home/duda/Downloads/programming/b63/examples/custom.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/custom.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=address -std=gnu11 -o CMakeFiles/custom_address.dir/custom.c.o -c /home/duda/Downloads/programming/b63/examples/custom.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/custom.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=leak -std=gnu11 -o CMakeFiles/custom_leak.dir/custom.c.o -c /home/duda/Downloads/programming/b63/examples/custom.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/custom.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=thread -std=gnu11 -o CMakeFiles/custom_thread.dir/custom.c.o -c /home/duda/Downloads/programming/b63/examples/custom.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/custom.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=undefined -std=gnu11 -o CMakeFiles/custom_undefined.dir/custom.c.o -c /home/duda/Downloads/programming/b63/examples/custom.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/custom.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -std=gnu11 -o CMakeFiles/raw.dir/raw.c.o -c /home/duda/Downloads/programming/b63/examples/raw.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/raw.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=address -std=gnu11 -o CMakeFiles/raw_address.dir/raw.c.o -c /home/duda/Downloads/programming/b63/examples/raw.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/raw.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=leak -std=gnu11 -o CMakeFiles/raw_leak.dir/raw.c.o -c /home/duda/Downloads/programming/b63/examples/raw.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/raw.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=thread -std=gnu11 -o CMakeFiles/raw_thread.dir/raw.c.o -c /home/duda/Downloads/programming/b63/examples/raw.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/raw.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=undefined -std=gnu11 -o CMakeFiles/raw_undefined.dir/raw.c.o -c /home/duda/Downloads/programming/b63/examples/raw.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/raw.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -std=gnu11 -o CMakeFiles/suspend.dir/suspend.c.o -c /home/duda/Downloads/programming/b63/examples/suspend.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/suspend.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=address -std=gnu11 -o CMakeFiles/suspend_address.dir/suspend.c.o -c /home/duda/Downloads/programming/b63/examples/suspend.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/suspend.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=leak -std=gnu11 -o CMakeFiles/suspend_leak.dir/suspend.c.o -c /home/duda/Downloads/programming/b63/examples/suspend.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/suspend.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=thread -std=gnu11 -o CMakeFiles/suspend_thread.dir/suspend.c.o -c /home/duda/Downloads/programming/b63/examples/suspend.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/suspend.c"
+},
+{
+  "directory": "/home/duda/Downloads/programming/b63/build/examples",
+  "command": "/nix/store/lsyzzki1iv9gwk4vdss7i1cjxrnxling-gcc-wrapper-11.3.0/bin/gcc  -I/home/duda/Downloads/programming/b63/include -fsanitize=undefined -std=gnu11 -o CMakeFiles/suspend_undefined.dir/suspend.c.o -c /home/duda/Downloads/programming/b63/examples/suspend.c",
+  "file": "/home/duda/Downloads/programming/b63/examples/suspend.c"
+}
+]
