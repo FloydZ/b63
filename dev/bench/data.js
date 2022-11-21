@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1669055501088,
+  "lastUpdate": 1669055502336,
   "repoUrl": "https://github.com/FloydZ/b63",
   "entries": {
     "b63": [
@@ -300,6 +300,40 @@ window.BENCHMARK_DATA = {
             "value": 52664.506001,
             "unit": "events/s",
             "extra": "random (32.789721)42"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "floyd.zweydinger@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "committer": {
+            "email": "floyd.zweydinger@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "distinct": true,
+          "id": "c248912f1ab0dddaf4df6669bcaa8f614d493b86",
+          "message": "added a commit to see the benchmarks",
+          "timestamp": "2022-11-21T19:30:48+01:00",
+          "tree_id": "fe311d8daff109c1551901ebc2b25b6c8530dc1d",
+          "url": "https://github.com/FloydZ/b63/commit/c248912f1ab0dddaf4df6669bcaa8f614d493b86"
+        },
+        "date": 1669055501948,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "sequential_time",
+            "value": 39657.466406,
+            "unit": "events/s",
+            "extra": "sequential"
+          },
+          {
+            "name": "random_time",
+            "value": 52657.794129,
+            "unit": "events/s",
+            "extra": "random (32.781539)42"
           }
         ]
       }
