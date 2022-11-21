@@ -110,7 +110,7 @@ jobs:
           make bm_seed  && ./examples/bm_seed  -j | tee benchmark_bm_seed.json  &&
           make custom   && ./examples/custom   -j | tee benchmark_custom.json   &&
           make indirect && ./examples/indirect -j | tee benchmark_indirect.json &&
-          make jemallic && ./examples/jemalloc -j | tee benchmark_jemalloc.json &&
+          make jemalloc && ./examples/jemalloc -j | tee benchmark_jemalloc.json &&
           make l1d_miss && ./examples/l1d_miss -j | tee benchmark_l1d_miss.json &&
           make raw      && ./examples/raw      -j | tee benchmark_raw.json      &&
           make raw      && ./examples/indirect -j | tee benchmark_indirect.json &&
@@ -128,7 +128,6 @@ jobs:
           comment-on-alert: true
           fail-on-alert: true
           alert-comment-cc-users: '@FloydZ'
-      
       
       - name: Store benchmark result (basic)
         uses: benchmark-action/github-action-benchmark@v1
