@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1669072482314,
+  "lastUpdate": 1669072483586,
   "repoUrl": "https://github.com/FloydZ/b63",
   "entries": {
     "b63": [
@@ -493,6 +493,40 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/FloydZ/b63/commit/c248912f1ab0dddaf4df6669bcaa8f614d493b86"
         },
         "date": 1669055503256,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "call_normal_calls",
+            "value": 1,
+            "unit": "events/s",
+            "extra": "call_normal"
+          },
+          {
+            "name": "call_twice_calls",
+            "value": 2,
+            "unit": "events/s",
+            "extra": "call_twice (100.000000)42"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "floyd.zweydinger@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "committer": {
+            "email": "floyd.zweydinger@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "distinct": true,
+          "id": "4444d51b151f2e80fc77211b6f74f0ee9a7f3177",
+          "message": "updated readme",
+          "timestamp": "2022-11-22T00:13:36+01:00",
+          "tree_id": "7793e8b7a8bf040c8594e17384d68645be907ea7",
+          "url": "https://github.com/FloydZ/b63/commit/4444d51b151f2e80fc77211b6f74f0ee9a7f3177"
+        },
+        "date": 1669072483228,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
