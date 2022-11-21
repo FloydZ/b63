@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1669055258447,
+  "lastUpdate": 1669055259590,
   "repoUrl": "https://github.com/FloydZ/b63",
   "entries": {
     "b63": [
@@ -304,6 +304,42 @@ window.BENCHMARK_DATA = {
             "value": 831.62728,
             "unit": "events/s",
             "extra": "indirect (32.339354)42"
+          }
+        ]
+      }
+    ],
+    "b63-jemalloc": [
+      {
+        "commit": {
+          "author": {
+            "email": "floyd.zweydinger@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "committer": {
+            "email": "floyd.zweydinger@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "distinct": true,
+          "id": "260720cfaea1242870f2fb457a9685644fc4b716",
+          "message": "typo",
+          "timestamp": "2022-11-21T19:26:42+01:00",
+          "tree_id": "6c56e94a1475ac44b5c5f7a66a02122ee23e99cd",
+          "url": "https://github.com/FloydZ/b63/commit/260720cfaea1242870f2fb457a9685644fc4b716"
+        },
+        "date": 1669055259279,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "allocate_jemalloc_thread_allocated",
+            "value": 0,
+            "unit": "events/s",
+            "extra": "allocate"
+          },
+          {
+            "name": "allocate_more_jemalloc_thread_allocated",
+            "value": 0,
+            "unit": "events/s",
+            "extra": "allocate_more (-nan)32"
           }
         ]
       }
