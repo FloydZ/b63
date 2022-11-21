@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1669055260787,
+  "lastUpdate": 1669055262013,
   "repoUrl": "https://github.com/FloydZ/b63",
   "entries": {
     "b63": [
@@ -376,6 +376,42 @@ window.BENCHMARK_DATA = {
             "value": 8687.52381,
             "unit": "events/s",
             "extra": "many_reads"
+          }
+        ]
+      }
+    ],
+    "b63-supend": [
+      {
+        "commit": {
+          "author": {
+            "email": "floyd.zweydinger@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "committer": {
+            "email": "floyd.zweydinger@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "distinct": true,
+          "id": "260720cfaea1242870f2fb457a9685644fc4b716",
+          "message": "typo",
+          "timestamp": "2022-11-21T19:26:42+01:00",
+          "tree_id": "6c56e94a1475ac44b5c5f7a66a02122ee23e99cd",
+          "url": "https://github.com/FloydZ/b63/commit/260720cfaea1242870f2fb457a9685644fc4b716"
+        },
+        "date": 1669055261673,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "with_suspend_time",
+            "value": 22.113214,
+            "unit": "events/s",
+            "extra": "with_suspend"
+          },
+          {
+            "name": "basic_time",
+            "value": 22.219792,
+            "unit": "events/s",
+            "extra": "basic"
           }
         ]
       }
