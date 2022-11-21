@@ -106,7 +106,15 @@ jobs:
         working-directory: ${{github.workspace}}/build
         run: 
           make baseline && ./examples/baseline -j | tee benchmark_baseline.json &&
-          make basic    && ./examples/basic    -j | tee benchmark_basic.json
+          make basic    && ./examples/basic    -j | tee benchmark_basic.json    &&
+          make bm_seed  && ./examples/bm_seed  -j | tee benchmark_bm_seed.json  &&
+          make custom   && ./examples/custom   -j | tee benchmark_custom.json   &&
+          make indirect && ./examples/indirect -j | tee benchmark_indirect.json &&
+          make jemallic && ./examples/jemalloc -j | tee benchmark_jemalloc.json &&
+          make l1d_miss && ./examples/l1d_miss -j | tee benchmark_l1d_miss.json &&
+          make raw      && ./examples/raw      -j | tee benchmark_raw.json      &&
+          make raw      && ./examples/indirect -j | tee benchmark_indirect.json &&
+          make suspend  && ./examples/suspend  -j | tee benchmark_supend.json 
 
       - name: Store benchmark result (baseline)
         uses: benchmark-action/github-action-benchmark@v1
@@ -120,13 +128,92 @@ jobs:
           comment-on-alert: true
           fail-on-alert: true
           alert-comment-cc-users: '@FloydZ'
-
+      
+      
       - name: Store benchmark result (basic)
         uses: benchmark-action/github-action-benchmark@v1
         with:
           name: b63-basic
           tool: 'customSmallerIsBetter'
           output-file-path: build/benchmark_basic.json
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          auto-push: true
+          alert-threshold: '200%'
+          comment-on-alert: true
+          fail-on-alert: true
+          alert-comment-cc-users: '@FloydZ'
+
+      - name: Store benchmark result (bm_seed)
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: b63-bm_seed
+          tool: 'customSmallerIsBetter'
+          output-file-path: build/benchmark_bm_seed.json
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          auto-push: true
+          alert-threshold: '200%'
+          comment-on-alert: true
+          fail-on-alert: true
+          alert-comment-cc-users: '@FloydZ'
+
+      - name: Store benchmark result (custom)
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: b63-custom
+          tool: 'customSmallerIsBetter'
+          output-file-path: build/benchmark_custom.json
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          auto-push: true
+          alert-threshold: '200%'
+          comment-on-alert: true
+          fail-on-alert: true
+          alert-comment-cc-users: '@FloydZ'
+
+      - name: Store benchmark result (indirect)
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: b63-indirect
+          tool: 'customSmallerIsBetter'
+          output-file-path: build/benchmark_indirect.json
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          auto-push: true
+          alert-threshold: '200%'
+          comment-on-alert: true
+          fail-on-alert: true
+          alert-comment-cc-users: '@FloydZ'
+
+      - name: Store benchmark result (jemalloc)
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: b63-jemalloc
+          tool: 'customSmallerIsBetter'
+          output-file-path: build/benchmark_jemalloc.json
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          auto-push: true
+          alert-threshold: '200%'
+          comment-on-alert: true
+          fail-on-alert: true
+          alert-comment-cc-users: '@FloydZ'
+
+      - name: Store benchmark result (raw)
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: b63-raw
+          tool: 'customSmallerIsBetter'
+          output-file-path: build/benchmark_raw.json
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          auto-push: true
+          alert-threshold: '200%'
+          comment-on-alert: true
+          fail-on-alert: true
+          alert-comment-cc-users: '@FloydZ'
+
+      - name: Store benchmark result (suspend)
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: b63-supend
+          tool: 'customSmallerIsBetter'
+          output-file-path: build/benchmark_supend.json
           github-token: ${{ secrets.GITHUB_TOKEN }}
           auto-push: true
           alert-threshold: '200%'
