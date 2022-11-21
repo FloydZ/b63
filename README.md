@@ -297,6 +297,7 @@ Things you need to take care:
 - the programs to benchmark must be called with the `-j` (json) flag
 - Benchmark-Actions must be called with the tool `customSmallerIsBetter`
 
+The final result website looks like [this](https://floydz.github.io/b63/dev/bench/)
 ## Next steps:
 - a convenient way to measure outliers. For example, as hash maps usually have amortized O(1) cost for lookup, what does p99 lookup time looks like for some lookup distribution? What can be done to improve?
 - support CPU perf counters sources beyond Linux perf_events, for example [Intel's PCM](https://github.com/opcm/pcm) and [BSD pmcstat](https://www.freebsd.org/cgi/man.cgi?query=pmcstat).
