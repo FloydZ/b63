@@ -105,14 +105,28 @@ jobs:
       - name: Run benchmark (get data)
         working-directory: ${{github.workspace}}/build
         run: 
-          make baseline && ./examples/baseline -j | tee benchmark_result.json && cat benchmark_result.json
+          make baseline && ./examples/baseline -j | tee benchmark_baseline.json
+          make basic    && ./examples/basic    -j | tee benchmark_basic.json
 
-      - name: Store benchmark result
+      - name: Store benchmark result (baseline)
         uses: benchmark-action/github-action-benchmark@v1
         with:
-          name: b63
+          name: b63-baseline
           tool: 'customSmallerIsBetter'
-          output-file-path: build/benchmark_result.json
+          output-file-path: build/benchmark_baseline.json
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          auto-push: true
+          alert-threshold: '200%'
+          comment-on-alert: true
+          fail-on-alert: true
+          alert-comment-cc-users: '@FloydZ'
+
+      - name: Store benchmark result (basic)
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: b63-basic
+          tool: 'customSmallerIsBetter'
+          output-file-path: build/benchmark_basic.json
           github-token: ${{ secrets.GITHUB_TOKEN }}
           auto-push: true
           alert-threshold: '200%'

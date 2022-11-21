@@ -29,6 +29,7 @@ B63_BASELINE(sequential, n) {
     std::iota(v.begin(), v.end(), 0);
   }
   int32_t res = 0;
+  
   for (size_t i = 0; i < n; i++) {
     for (size_t j = 0; j < kSize; j++) {
       res += v[j];

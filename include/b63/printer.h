@@ -32,20 +32,25 @@ static void b63_print_individual(b63_benchmark *bm, const char *counter,
                                  b63_stats *tt) {
   static int called = 0;
 
+  // print json
   if (bm->suite->printer_config.plaintext == 2) {
 	if (called == 1){
 	  printf(",");
 	}
-    printf("{\n\t\"name\": \"%s\",\n\t\"unit\":\"events/s\",\n\t\"value\": %f,\n\t\"extra\": \"%s\"\n}\n",
+    printf("{\n\t\"name\": \"%s_%s\",\n\t\"unit\":\"events/s\",\n\t\"value\": %f,\n\t\"extra\": \"%s\"\n}\n",
+		   bm->name,
 		   counter,
            1.0f * tt->sum_test / tt->n,
 		   bm->name);
+	 
+	 // i dont know if this is importnt
    	 fflush(stdout);
 
 	 called = 1;
 	 return;
   }
-  
+ 
+  // only print if -i was passed
   if (bm->suite->printer_config.plaintext != 0) {
     return;
   }
@@ -63,11 +68,12 @@ static void b63_print_comparison(b63_benchmark *bm,
 								const char *counter,
                                  b63_stats *tt) {
 
-
+  // == 1 means that the -i and -j flag was not passed
   if (bm->suite->printer_config.plaintext == 1) {
     return;
   }
-
+  
+  // TODO print also json
   if (bm->failed) {
     printf("%s%-30s%-20s: assertion fail%s\n", B63_CLR_RED,
            bm->name, counter, B63_CLR_RESET);
@@ -90,7 +96,8 @@ static void b63_print_comparison(b63_benchmark *bm,
   
   // either print json
   if (bm->suite->printer_config.plaintext == 2) {
-    printf(",{\n\t\"name\": \"%s\",\n\t\"unit\":\"events/s\",\n\t\"value\": %f,\n\t\"extra\": \"%s (%f)%d\"\n}\n",
+    printf(",{\n\t\"name\": \"%s_%s\",\n\t\"unit\":\"events/s\",\n\t\"value\": %f,\n\t\"extra\": \"%s (%f)%d\"\n}\n",
+		   bm->name,
 		   counter,
            1.0f * tt->sum_test / tt->n,
 		   bm->name,

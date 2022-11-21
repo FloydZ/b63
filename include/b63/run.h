@@ -128,15 +128,18 @@ static void b63_suite_run(b63_suite *suite) {
     if (counter->type->activate != NULL) {
       counter->type->activate(counter->impl);
     }
+
     if (suite->baseline != NULL) {
       baseline_results = (b63_epoch *)malloc(suite->epochs * sizeof(b63_epoch));
       suite->baseline->results = baseline_results;
       b63_benchmark_run(suite->baseline, counter, baseline_results);
     }
+
     B63_LIST_FOR_EACH(b63_benchmark, b) {
       if ((*b)->is_baseline) {
         continue;
       }
+
       b63_benchmark_run(*b, counter, results);
     }
   }
