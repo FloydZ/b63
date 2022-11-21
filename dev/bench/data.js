@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1669055256022,
+  "lastUpdate": 1669055257205,
   "repoUrl": "https://github.com/FloydZ/b63",
   "entries": {
     "b63": [
@@ -232,6 +232,42 @@ window.BENCHMARK_DATA = {
             "value": 52664.506001,
             "unit": "events/s",
             "extra": "random (32.789721)42"
+          }
+        ]
+      }
+    ],
+    "b63-custom": [
+      {
+        "commit": {
+          "author": {
+            "email": "floyd.zweydinger@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "committer": {
+            "email": "floyd.zweydinger@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "distinct": true,
+          "id": "260720cfaea1242870f2fb457a9685644fc4b716",
+          "message": "typo",
+          "timestamp": "2022-11-21T19:26:42+01:00",
+          "tree_id": "6c56e94a1475ac44b5c5f7a66a02122ee23e99cd",
+          "url": "https://github.com/FloydZ/b63/commit/260720cfaea1242870f2fb457a9685644fc4b716"
+        },
+        "date": 1669055256867,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "call_normal_calls",
+            "value": 1,
+            "unit": "events/s",
+            "extra": "call_normal"
+          },
+          {
+            "name": "call_twice_calls",
+            "value": 2,
+            "unit": "events/s",
+            "extra": "call_twice (100.000000)42"
           }
         ]
       }
