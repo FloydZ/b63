@@ -33,6 +33,14 @@ B63_BENCHMARK(basic_half, n) {
   B63_KEEP(res);
 }
 
+B63_BENCHMARK(basic_quarter, n) {
+  int i = 0, res = 0;
+  for (i = 0; i < n; i += 4) {
+    res += rand();
+  }
+  B63_KEEP(res);
+}
+
 int main(int argc, char **argv) {
 	B63_RUN_WITH("time,lpe:branches,lpe:branch-misses,lpe:cycles,lpe:L1-dcache-load-misses", argc, argv);
 	//B63_RUN(argc, argv);
