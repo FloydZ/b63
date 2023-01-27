@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1674825377416,
+  "lastUpdate": 1674825378764,
   "repoUrl": "https://github.com/FloydZ/b63",
   "entries": {
     "b63": [
@@ -765,6 +765,40 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/FloydZ/b63/commit/d26bf93c2c2fbdcd4fa75162ffc81f6523922b5e"
         },
         "date": 1669072530642,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "call_normal_calls",
+            "value": 1,
+            "unit": "events/s",
+            "extra": "call_normal"
+          },
+          {
+            "name": "call_twice_calls",
+            "value": 2,
+            "unit": "events/s",
+            "extra": "call_twice (100.000000)42"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "floyd.zweydinger@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "committer": {
+            "email": "floyd.zweydinger@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "distinct": true,
+          "id": "8043782d30775c72809b540bfe13506a06437445",
+          "message": "added shell.nix",
+          "timestamp": "2023-01-27T14:15:17+01:00",
+          "tree_id": "6e5c53b6d4cc09a3395c3eb3e21b4263006dc12a",
+          "url": "https://github.com/FloydZ/b63/commit/8043782d30775c72809b540bfe13506a06437445"
+        },
+        "date": 1674825378423,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
