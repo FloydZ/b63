@@ -303,3 +303,6 @@ The final result website looks like [this](https://floydz.github.io/b63/dev/benc
 - support CPU perf counters sources beyond Linux perf_events, for example [Intel's PCM](https://github.com/opcm/pcm) and [BSD pmcstat](https://www.freebsd.org/cgi/man.cgi?query=pmcstat).
 - GPU perf counters (at least for Nvidia).
 - [low-pri] disk access and network.
+
+## TODO:
+- remove Makefile
