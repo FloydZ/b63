@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1696415019573,
+  "lastUpdate": 1696415021441,
   "repoUrl": "https://github.com/FloydZ/b63",
   "entries": {
     "b63": [
@@ -810,6 +810,40 @@ window.BENCHMARK_DATA = {
             "value": 52721.885649,
             "unit": "events/s",
             "extra": "random (32.835473)42"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "floyd.zweydinger+git@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "committer": {
+            "email": "floyd.zweydinger+git@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "distinct": true,
+          "id": "474e3068c52ebdb02851e115baadc2ce7aa69941",
+          "message": "added missing init fields in register",
+          "timestamp": "2023-10-04T12:22:25+02:00",
+          "tree_id": "f9d0bda61ca3439e30e170f6433e517d47f84f86",
+          "url": "https://github.com/FloydZ/b63/commit/474e3068c52ebdb02851e115baadc2ce7aa69941"
+        },
+        "date": 1696415020716,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "sequential_time",
+            "value": 40582.697621,
+            "unit": "events/s",
+            "extra": "sequential"
+          },
+          {
+            "name": "random_time",
+            "value": 79060.48145,
+            "unit": "events/s",
+            "extra": "random (94.813273)42"
           }
         ]
       }
