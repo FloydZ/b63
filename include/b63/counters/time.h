@@ -25,6 +25,7 @@
 
 /* default counter returning time in nanoseconds */
 B63_COUNTER(time) {
+	(void)impl;
 #ifdef NO_GET_TIME_SUPPORTED
   struct timeval tv;
 
