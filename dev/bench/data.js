@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1696412805987,
+  "lastUpdate": 1696412807328,
   "repoUrl": "https://github.com/FloydZ/b63",
   "entries": {
     "b63": [
@@ -708,6 +708,40 @@ window.BENCHMARK_DATA = {
             "value": 40543.401466,
             "unit": "events/s",
             "extra": "random (45.217406)42"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "floyd.zweydinger+git@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "committer": {
+            "email": "floyd.zweydinger+git@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "distinct": true,
+          "id": "6bb49714aaaa5162910b37e82131fc91a315641b",
+          "message": "Merge branch 'master' of github.com:FloydZ/b63 into HEAD",
+          "timestamp": "2023-10-04T11:45:19+02:00",
+          "tree_id": "008cd3667664c7b55f6d3d410ecc6102db7083c6",
+          "url": "https://github.com/FloydZ/b63/commit/6bb49714aaaa5162910b37e82131fc91a315641b"
+        },
+        "date": 1696412806932,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "sequential_time",
+            "value": 39689.613392,
+            "unit": "events/s",
+            "extra": "sequential"
+          },
+          {
+            "name": "random_time",
+            "value": 52721.885649,
+            "unit": "events/s",
+            "extra": "random (32.835473)42"
           }
         ]
       }
