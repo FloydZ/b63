@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1696415025858,
+  "lastUpdate": 1696415028429,
   "repoUrl": "https://github.com/FloydZ/b63",
   "entries": {
     "b63": [
@@ -1517,6 +1517,40 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/FloydZ/b63/commit/6bb49714aaaa5162910b37e82131fc91a315641b"
         },
         "date": 1696412810912,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "allocate_jemalloc_thread_allocated",
+            "value": 0,
+            "unit": "events/s",
+            "extra": "allocate"
+          },
+          {
+            "name": "allocate_more_jemalloc_thread_allocated",
+            "value": 0,
+            "unit": "events/s",
+            "extra": "allocate_more (-nan)32"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "floyd.zweydinger+git@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "committer": {
+            "email": "floyd.zweydinger+git@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "distinct": true,
+          "id": "474e3068c52ebdb02851e115baadc2ce7aa69941",
+          "message": "added missing init fields in register",
+          "timestamp": "2023-10-04T12:22:25+02:00",
+          "tree_id": "f9d0bda61ca3439e30e170f6433e517d47f84f86",
+          "url": "https://github.com/FloydZ/b63/commit/474e3068c52ebdb02851e115baadc2ce7aa69941"
+        },
+        "date": 1696415027630,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
