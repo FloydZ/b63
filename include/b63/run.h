@@ -51,7 +51,8 @@ static void b63_epoch_run(b63_epoch *e, int64_t seed) {
 
     /* Here the 'measured' function is called */
     started = counter->type->read(counter->impl);
-    b->run(e, n, seed);
+    //TODO old code: b->run(e, n, seed);
+    b->run(e, n);
     done = counter->type->read(counter->impl);
 
     e->events += (done - started);

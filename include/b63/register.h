@@ -34,7 +34,7 @@
 B63_LIST_DECLARE(b63_benchmark)
 
 #define B63_BENCHMARK_IMPL(bname, baseline, iters)                             \
-  void b63_run_##bname(b63_epoch *, uint64_t, int64_t);                        \
+  void b63_run_##bname(b63_epoch *, uint64_t);                        		   \
   static b63_benchmark b63_b_##bname = {                                       \
       .name = #bname,                                                          \
       .run = b63_run_##bname,                                                  \
@@ -44,7 +44,11 @@ B63_LIST_DECLARE(b63_benchmark)
 	  .failed = 0,                                                             \
   };                                                                           \
   B63_LIST_ADD(b63_benchmark, bname, &b63_b_##bname);                          \
-  void b63_run_##bname(b63_epoch *b63run, uint64_t iters, int64_t b63_seed)
+  void b63_run_##bname(b63_epoch *b63run, uint64_t iters)
+  
+
+// OLD CODE:
+// void b63_run_##bname(b63_epoch *b63run, uint64_t iters, int64_t b63_seed)
 
 /*
  * Marking benchmark as a 'baseline' would make other benchmarks to be compared
