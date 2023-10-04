@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1696415028429,
+  "lastUpdate": 1696415030817,
   "repoUrl": "https://github.com/FloydZ/b63",
   "entries": {
     "b63": [
@@ -1768,6 +1768,40 @@ window.BENCHMARK_DATA = {
           {
             "name": "many_reads_time",
             "value": 8775.716508,
+            "unit": "events/s",
+            "extra": "many_reads"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "floyd.zweydinger+git@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "committer": {
+            "email": "floyd.zweydinger+git@rub.de",
+            "name": "Floyd Zweydinger"
+          },
+          "distinct": true,
+          "id": "474e3068c52ebdb02851e115baadc2ce7aa69941",
+          "message": "added missing init fields in register",
+          "timestamp": "2023-10-04T12:22:25+02:00",
+          "tree_id": "f9d0bda61ca3439e30e170f6433e517d47f84f86",
+          "url": "https://github.com/FloydZ/b63/commit/474e3068c52ebdb02851e115baadc2ce7aa69941"
+        },
+        "date": 1696415030063,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "many_writes_time",
+            "value": 30631.64127,
+            "unit": "events/s",
+            "extra": "many_writes"
+          },
+          {
+            "name": "many_reads_time",
+            "value": 10056.767619,
             "unit": "events/s",
             "extra": "many_reads"
           }
