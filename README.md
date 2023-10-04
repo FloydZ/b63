@@ -1,3 +1,12 @@
+# TODO
+=====
+
+- fix CI 
+- fix warnings of unused parameter `seed`
+
+
+
+
 # B63
 
 Light-weight micro-benchmarking tool for C.
