@@ -39,7 +39,9 @@ B63_LIST_DECLARE(b63_benchmark)
       .name = #bname,                                                          \
       .run = b63_run_##bname,                                                  \
       .is_baseline = baseline,                                                 \
-      .failed = 0,                                                             \
+      .suite = NULL, 														   \
+	  .results = NULL, 														   \
+	  .failed = 0,                                                             \
   };                                                                           \
   B63_LIST_ADD(b63_benchmark, bname, &b63_b_##bname);                          \
   void b63_run_##bname(b63_epoch *b63run, uint64_t iters, int64_t b63_seed)
