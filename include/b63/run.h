@@ -51,7 +51,7 @@ static void b63_epoch_run(b63_epoch *e, int64_t seed) {
   for (int64_t n = 1; e->iterations < max_iterations_per_epoch; n *= 2) {
 
     /* Here the 'measured' function is called */
-    started = counter->type->read(counter->impl);
+    //TODO old code: b->run(e, n, seed);
     b->run(e, n);
     done = counter->type->read(counter->impl);
 

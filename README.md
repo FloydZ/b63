@@ -1,3 +1,12 @@
+# TODO
+=====
+
+- fix CI 
+- fix warnings of unused parameter `seed`
+
+
+
+
 # B63
 
 Light-weight micro-benchmarking tool for C.
@@ -98,7 +107,7 @@ int main(int argc, char **argv) {
 Build and run:
 
 This is the output of the sample run:
-```
+```bash
 $ g++ -O3 bm_seed.cpp -o bm
 $ ./bm -i # i for interactive mode
 sequential                    time                : 52858.855
@@ -129,7 +138,7 @@ Within the benchmark suite, there's a way to define 'baseline', and compare all 
 ## Output Modes
 Two output modes are supported:
  - plaintext mode (default), which produces output suitable for scripting/parsing, printing out each epoch individually to leave an option for more advanced data studies.
- ```
+ ```bash
  $ ./_build/bm_baseline
 basic,time,16777215,233781738
 basic,time,16777215,228961470
@@ -143,10 +152,23 @@ basic_half,time,33554431,228123909
 basic_half,time,33554431,228560855
 ```
  - interactive mode turned on with -i flag. There isn't much interactivity really, but the output is formatted and colored for human consumption, rather than other tool consumption.
- ```
-$ ./_build/bm_baseline -i
+ ```bash
+$ ./build/bm_baseline -i
 basic                         time                : 13.597
 basic_half                    time                : 6.787 (-50.083% *)
+```
+
+-j json mode turned on with -i flag via command line. Same as the -i flag, but the output is formatted in the `json` format.
+ ```bash
+./build/bm_baseline -j
+[
+{
+        "name": "basic_time",
+        "unit":"events/s",
+        "value": 13.716132,
+        "extra": "basic"
+}
+]
 ```
 
 ## Configuration
@@ -159,6 +181,7 @@ Following CLI flags are supported:
 - -t timelimit_per_benchmark - time limit in seconds for how long to run the benchmark; includes time benchmark is suspended.
 - -d delimiter to use for plaintext. Comma is default.
 - -s seed. Optional, needed for reproducibility and A/B testing across binaries, for example, different versions of code or difference hardware. If not provided, seed will be generated.
+- -j json, if provided output will be `json` formatted.
 
 ### Configuration in code
 It's possible to configure the counters to run within the code itself, by using B63_RUN_WITH("list,of,counters", argc, argv);
@@ -183,7 +206,7 @@ When benchmarks are configured to run with multiple counters, each benchmark is 
 
 The suspension is an important case to understand and interpret correctly. To illustrate this, let's look at the following example [benchmark](examples/suspend.c):
 
-```
+```bash
 $ ./_build/bm_suspend
 with_suspend,time,8388607,117749190
 with_suspend,time,8388607,117033209
@@ -209,13 +232,13 @@ This family of counters uses perf_events interface, same as Linux perf tool. It 
 'how different execution ports on CPU are used across several implementation of the algorithm?' much easier compared to building separate binaries, running them with perf tool (or equivalent) drilling down to the function in question, etc. 
   
 Example usage:
-```
+```bash
 $ ./bm_raw -c lpe:cycles,lpe:r04a1
 ```
 
 #### Jemalloc thread allocations ("jemalloc_thread_allocated")
 This counter tracks the number of bytes allocated by jemalloc in the calling thread. Example usage:
-```
+```bash
 $ ./bm_jemalloc -c jemalloc_thread_allocated
 ```
 
@@ -260,6 +283,11 @@ will only work on Linux, jemalloc counter will only work/make sense if memory al
   - Caveats:
     - requires -lrt flag, as POSIX realtime extension are not (yet) in libc.
     - ref-cycles event from linux perf_events is not supported.
+6. FrameWork
+  - OS: NixOS 22.1 (Kernel: 5.15.79-generic)
+  - CPU: 12th Gen Intel(R) Core(TM) i5-1240P
+  - Compiler: GCC 11.3.0
+
 
 ## Internals
 The library consists of a core part responsible for running the benchmarks, and pluggable counters. The library is header-only, thus, there isn't much encapsulation going on.  Every global symbol is prefixed with b63\_.
@@ -272,8 +300,18 @@ Main internal data structures are:
 5) b63_counter_list. Set of all counters to run benchmarks for.
 6) b63_run. Individual benchmark execution.
 
+## Github actions
+Under [`.github/workflow`](https://github.com/FloydZ/b63/blob/master/.github/workflows/test.yml) you will find a few examples how to use this `b63` library in github actions together with [Benchmark-Actions](https://github.com/benchmark-action/github-action-benchmark). This allows for an CI benchmarking system using `b63`.
+Things you need to take care:
+- the programs to benchmark must be called with the `-j` (json) flag
+- Benchmark-Actions must be called with the tool `customSmallerIsBetter`
+
+The final result website looks like [this](https://floydz.github.io/b63/dev/bench/)
 ## Next steps:
 - a convenient way to measure outliers. For example, as hash maps usually have amortized O(1) cost for lookup, what does p99 lookup time looks like for some lookup distribution? What can be done to improve?
 - support CPU perf counters sources beyond Linux perf_events, for example [Intel's PCM](https://github.com/opcm/pcm) and [BSD pmcstat](https://www.freebsd.org/cgi/man.cgi?query=pmcstat).
 - GPU perf counters (at least for Nvidia).
 - [low-pri] disk access and network.
+
+## TODO:
+- remove Makefile

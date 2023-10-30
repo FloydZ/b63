@@ -46,6 +46,7 @@ B63_LIST_DECLARE(b63_benchmark)
   B63_LIST_ADD(b63_benchmark, bname, &b63_b_##bname);                          \
   void b63_run_##bname(b63_epoch *b63run, uint64_t iters)
 
+
 /*
  * Marking benchmark as a 'baseline' would make other benchmarks to be compared
  * against it. There could be only one baseline.

@@ -45,6 +45,7 @@ typedef struct b63_epoch {
  * benchmarked function template, it needs to support 'run n iterations' and
  * seed for any generation.
  */
+/// typedef void (*b63_target_fn)(struct b63_epoch *, uint64_t, int64_t);
 typedef void (*b63_target_fn)(struct b63_epoch *, uint64_t);
 
 /*
