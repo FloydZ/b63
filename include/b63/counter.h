@@ -56,6 +56,8 @@ typedef void (*b63_counter_activate_fn)(void *impl);
 typedef int8_t (*b63_counter_factory_fn)(const char *config, void **impl);
 /* Default counter factory for stateless counters. */
 int8_t b63_counter_factory_fn_default(const char *config, void **impl) {
+	(void)config;
+	(void)impl;
   return 1;
 }
 
