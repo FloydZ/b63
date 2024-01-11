@@ -43,7 +43,7 @@ static void b63_epoch_run(b63_epoch *e, int64_t seed) {
   e->suspension_done = 0;
   e->fail = 0;
 
-  int64_t started, done;
+  int64_t started = 0, done;
   /*
    * For each epoch run as many iterations as fit within the time budget
    */
